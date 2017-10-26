@@ -1,8 +1,8 @@
 #lang racket
 
 ; a)
-(define tree1 '(((() 3 ()) 9 (() 15 ())) 18 ((() 29 ()) 40 (() 49 (() 78())))))
-(define example_to_sort '(2 12 93 5 4 98 76 1))
+(define tree1 '(((() 6 ()) 4 (() 67 ())) 12 ((() 32 ()) 43 (() 56 (() 38())))))
+(define example_to_sort '(4 14 56 3 17 97 42 2))
 
 (define (dispSorted tree)
   (begin (cond [(not (empty?( car tree))) (dispSorted (car tree))])
